@@ -1,0 +1,196 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+// border: solid 1px #bcc9de;
+
+.header {
+  margin-bottom: -48px;
+  padding-top: 50px;
+  padding-bottom: 190px;
+  background: url('../img/clouds-pen-man.png') no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  background-color: #dcfcfe;
+}
+
+.navTop {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 80px;
+  margin-right: 380px;
+  margin-bottom: 25px;
+}
+
+.logo {
+  margin-top: 16px;
+  min-width: 295px;
+}
+
+.menuWrap {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #bcc9de;
+}
+
+.menuTop {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  margin-bottom: 19px;
+  &--item {
+    margin-right: 45px;
+  }
+  &--link {
+    white-space: nowrap;
+    font-size: 16px;
+    color: #1f2939;
+    transition: $transition;
+    &:hover {
+      text-decoration: none;
+      color: #415677;
+    }
+  }
+  &--item_bar {
+    margin-right: 30px;
+  }
+  &--innerItem {
+    display: none;
+  }
+  &--login, &--lock {
+    @include btn-gradient-text-color();
+    margin-right: 11px;
+  }
+  &--buttons {
+    margin-bottom: 19px;
+  }
+  &--btn {
+    @extend .btn;
+    border: solid 1px #bcc9de;
+    padding: 7px 11px;
+    background-color: #eafafa;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.connection {
+  display: flex;
+  &--icon {
+    @include btn-gradient-text-color();
+    margin-right: 30px;
+    transform: rotate(90deg);
+    font-size: 47px;
+  }
+  &--info {
+    display: flex;
+    flex-direction: column;
+  }
+  &--phone {
+    font-size: 24px;
+  }
+  &--support {
+    font-size: 16px;
+  }
+  &--line {
+    margin: 0 49px;
+    width: 1px;
+    height: 100%;
+    background-color: #bcc9de;
+  }
+  &--btn {
+    @extend .btn;
+    @extend .btn--big;
+    align-self: center;
+  }
+}
+
+.aboutWrap {
+  margin-left: 170px;
+}
+
+.about {
+  width: 60%;
+  &--title {
+    margin-bottom: 45px;
+    font-size: 86px;
+    font-weight: bold;
+    line-height: 1;
+    color: #1f2939;
+  }
+  &--subtitle, &--subscribe {
+    font-size: 30px;
+  }
+  &--subtitle {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #ff891a;
+  }
+  &--icon {
+    @include btn-gradient-text-color();
+    margin-right: 15px;
+  }
+  &--subscribe {
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+}
+
+.registerWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.register {
+  width: 100%;
+  max-width: 1280px;
+  box-shadow: 0px -5px 41px -1px rgba(0,0,0,0.2);
+  background-color: #fff;
+  &--title {
+    border-bottom: 3px solid #ff891a;
+    padding: 37px;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &--form {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 30px 55px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &--selectWrap {
+    box-flex: 0;
+    flex: 0 0 33.3%;
+    padding: 15px;
+    max-width: 33.3%;
+  }
+  &--input {
+    border: none;
+    border-bottom: 1px solid #bcc9de;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+    color: #1f2939;
+  }
+  &--input_btn {
+    background: linear-gradient(to right, $btn-gradient-color-left 0%, $btn-gradient-color-right 100%);
+    color: $white-color;
+    &:hover {
+      background: linear-gradient(to right,  $btn-gradient-color-right 0%, $btn-gradient-color-left 100%);
+    }
+  }
+}

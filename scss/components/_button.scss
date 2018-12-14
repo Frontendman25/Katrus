@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn--big {
+  border: none;
+  padding: 17px 47px;
+  background: linear-gradient(to right, $btn-gradient-color-left 0%, $btn-gradient-color-right 100%);
+  color: $white-color;
+  font-weight: 700;
+}
+
+.btn--big:hover {
+  background: linear-gradient(to right, $btn-gradient-color-right 0%, $btn-gradient-color-left 100%);
+}
